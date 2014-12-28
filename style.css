@@ -1,0 +1,237 @@
+/*  
+Theme Name: VMT custom
+Version: 1.0
+Description: Designed by <a href="http://www.jasonryant.com/">Jason Ryant</a>.
+Author: Jason Ryant
+Author URI: http://www.jasonryant.com/
+Template: divi21
+*/
+
+@import url("../divi21/style.css");
+@import url("../divi21/css/advanced_options.css");
+@import url("et-line-font.css");
+
+h1, h2 { font-weight: 800 !important; text-transform: uppercase !important; letter-spacing: 2px; }
+h3 { font-style: italic; }
+h4 { line-height: 28px; font-weight: 600; }
+
+/*a:hover { color: #fc624a; }*/ /* debug */
+
+.et_fixed_nav #logo { max-height: none; }
+@media only screen and (max-width: 980px) {
+	#logo { max-height: none; }
+	.et_pb_media_alignment_center .et_pb_slide_image { left: -35%; width: inherit; }
+	.et_pb_slide_description h2 { font-weight: 800 !important; font-size: 34px !important; }
+}
+
+#et-info { float: none; padding-bottom: 0; font-size: 14px; }
+#top-header { /*position: fixed;*/ width: 100%; }
+#top-header .et-social-icons { float: right; }
+@media only screen and (max-width: 767px) {
+	/*.et-social-icons { display: none; }*/
+	#et-secondary-menu { visibility: hidden; margin-top: 0 !important; padding-bottom: 0; height: 12px; }
+
+	.et_pb_container { min-height: none !important; }
+	.et_pb_media_alignment_center .et_pb_slide_image { top: 0; left: 0px !important; /*opacity: 0.8 !important;*/ display: block !important; margin-top: 0 !important; }
+	.et_pb_media_alignment_center .et_pb_slide_image img { margin-top: 0 !important; width: 315px; }
+	.et_pb_slide_with_image .et_pb_slide_description { padding-top: 265px !important; padding-bottom: 0 !important; }
+	.et_pb_slide_description h2, .et_pb_column_1_4 .et_pb_slider_fullwidth_off h2 { font-weight: 800 !important; padding-bottom: 12px; }
+}
+
+@media only screen and (max-width: 479px) {
+	.et_pb_media_alignment_center .et_pb_slide_image { top: 0; left: -10px !important; }
+	.et_pb_slide_image img { max-height: none !important; margin-top: 0 !important; width: 315px; }
+	.et_pb_slide_with_image .et_pb_slide_description { }
+	.et_pb_slide_content { display: block !important; text-align: left; }
+}
+
+/*.et-fixed-header*/ #logo { max-height: 72px; float: none; }
+
+#contact-link {
+	z-index: 999;
+	position: fixed;
+	top: -3px;
+	left: 25px;
+	font-size: 1.3em;
+	background-color: #FC624A;
+	color: white !important;
+	padding: 10px 10px 10px 23px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	display: none;
+	opacity: 0.5;
+	-webkit-transition: opacity 200ms, top 200ms; /* For Safari 3.1 to 6.0 */
+    transition: opacity 200ms, top 200ms;
+}
+#contact-link:hover {
+	opacity: 1;
+	top: 0;
+}
+@media only screen and (max-width: 767px){
+	/*#contact-link { display: none !important; }*/
+	#contact-link {
+		width: 100%;
+		left: 0;
+		top: 0;
+		text-align: center;
+		border-radius: 0;
+		padding: 10px;
+	}
+}
+
+#et-top-navigation { display: none; }
+
+#main-header .container { text-align: center; /*margin-top: 34px;*/ }
+
+#hero {
+	text-shadow: 1px 1px #666;
+}
+@media only screen and (max-width: 980px) {
+	#hero {
+		padding: 2em;
+		border-radius: 10px;
+		background-color: rgba(0,0,0,0.2);
+		margin-top: 170px;
+		width: 100%;
+		position: relative;
+		left: -2em;
+	}
+}
+@media only screen and (max-width: 767px) {
+	#hero {
+		margin-top: 170px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	#hero {
+		width: 80%;
+	}
+}
+
+.et_pb_slide_with_image .et_pb_slide_description { padding-bottom: 100px; }
+.et_pb_slide_description { padding: 100px; }
+
+#top-header #connect-with-me { display: none; }
+.et-social-icons li.et-social-facebook { margin-left: 10px; }
+
+#connect-with-me {
+    font-size: 30px;
+	font-weight: 800 !important;
+	color: #333;
+	text-transform: uppercase !important;
+	letter-spacing: 2px;
+	text-align: right;
+}
+
+#quotes {
+	padding-top: 0;
+	padding-bottom: 0;
+	background: #fff url("http://server.local:8888/vmt/wp-content/uploads/2014/09/DSC_2134-web.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+#quotes-slider { background-position: left top; }
+
+#quotes-slider .icon-quote {
+	width: 100%;
+	text-align: center;
+	font-size: 2.5em;
+	font-weight: 900;
+}
+
+#quotes-slider .et_pb_slide_description { padding: 50px; }
+#quotes-slider .et-pb-arrow-prev { left: 0; }
+#quotes-slider .et-pb-arrow-next { right: 0; }
+
+/*#quotes-slider .et_pb_slide_description::before {
+	content: "&quot;";
+	font-size: 32px;
+	left: 50%;
+	position: absolute;
+	top: -16px;
+	background: none repeat scroll 0% 0% #F5F5F5;
+	margin-left: -16px;
+	border-radius: 31px;
+}*/
+
+@media only screen and (max-width: 980px) {
+	/*#quotes { background-position: -390px -180px; }*/
+	#quotes .spacer { display: none; }
+	#jeremy {
+		/*display: none;*/
+		/*visibility: hidden;*/
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	/*#quotes { background-position: -600px -230px; }*/
+}
+
+@media only screen and (max-width: 479px) {
+	/*#quotes { background-position: -800px -330px; }*/
+	/*#quotes-slider { background-position: -300px -0px; }*/
+}
+
+#quotes .et_pb_testimonial { border-radius: 10px; }
+
+#quotes .et_pb_testimonial,
+#quotes .et_pb_testimonial::before {
+	background-color: rgba(0, 0, 0, 0.3) !important;
+}
+#quotes .spacer {
+	height: 223px;
+}
+
+#quotes-slider .et_pb_column_1_2 {
+	/*height: 300px;*/
+}
+
+#quotes-slider .et_pb_slide {
+	background-color: rgba(0, 0, 0, 0.3) !important;
+	border: none;
+	border-radius: 10px;
+}
+
+#quotes-slider .et_pb_slide_description > h2 { display: none; }
+
+#quotes-slider .et_pb_slide_description {
+	text-align: left;
+}
+
+#stats {
+	padding-top: 0;
+}
+
+#contact { padding-bottom: 0; }
+#subscribe { padding-top: 0; }
+
+/* Direct Mail Form */
+
+.entry-content tr td {
+	border: 0;
+	padding: 0;
+}
+
+form.directmail-subscribe-form[data-form-id="d6d4b631"] input[type="text"],
+form.directmail-subscribe-form[data-form-id="d6d4b631"] input[type="email"] {
+	padding: 8px !important;
+}
+.directmail-main-table p.label {
+	color: black;
+}
+@media only screen and (min-width: 768px) {
+	.directmail-main-table p.label {
+		display: none;
+	}
+}
+@media only screen and (min-width: 481px) and (max-width: 620px) {
+	form.directmail-subscribe-form {
+		width: 100%;
+		max-width: 
+	}
+}
+
+.hidden { display: none; }
