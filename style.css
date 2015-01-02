@@ -27,6 +27,8 @@ h4 { line-height: 28px; font-weight: 600; }
 #et-info { float: none; padding-bottom: 0; font-size: 14px; }
 #top-header { /*position: fixed;*/ width: 100%; }
 #top-header .et-social-icons { float: right; }
+.et-social-icon a:hover { color: #fc624a; }
+
 @media only screen and (max-width: 767px) {
 	/*.et-social-icons { display: none; }*/
 	#et-secondary-menu { visibility: hidden; margin-top: 0 !important; padding-bottom: 0; height: 12px; }
@@ -135,6 +137,8 @@ h4 { line-height: 28px; font-weight: 600; }
 
 #quotes-slider { background-position: left top; }
 
+.et_pb_slider_fullwidth_off .et_pb_container { width: 101% !important; }
+
 #quotes-slider .icon-quote {
 	width: 100%;
 	text-align: center;
@@ -142,6 +146,7 @@ h4 { line-height: 28px; font-weight: 600; }
 	font-weight: 900;
 }
 
+#quotes-slider h3 { line-height: 1.2em; }
 #quotes-slider .et_pb_slide_description { padding: 50px; }
 #quotes-slider .et-pb-arrow-prev { left: 0; }
 #quotes-slider .et-pb-arrow-next { right: 0; }
